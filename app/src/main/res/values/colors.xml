@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="deadDark">#e502080d</color>
+    <color name="deadDark2">#d4202020</color>
+    <color name="colorAccent">#FF69B4</color>
+
+    <color name="black_overlay">#e4e3e3</color>
+    <color name="white_overlay">#66f5f8f6</color>
+    <color name="white_overlay2">#32f5f8f6</color>
+    <color name="pure_white">#FFFFFFFF</color>
+    <color name="drop_white">#f9f9f9</color>
+    <color name="drop_white2">#98f9f9f9</color>
+    <color name="orange">#AA00FF</color>
+    <color name="placeholder">#eeedf9</color>
+    <color name="transparent">#70b7b6b6</color>
+
+    <color name="truered">#B235F7</color>
+    <color name="heavenblack">#5a494949</color>
+    <color name="heavenblack2">#717171</color>
+
+    <color name="yellow">#F9F63B</color>
+
+
+    <!--Slider Colors-->
+    <!-- Screens background color-->
+
+    <!-- dots inactive colors -->
+
+    <!-- dots active colors -->
+
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+>
+
+    <ScrollView
+        android:id="@+id/scrollV1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="2dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:id="@+id/Upload_Demo1"
+                android:layout_marginBottom="20dp"
+                android:scaleType="fitCenter"
+                android:background="@drawable/ic_uscreen" />
+
+            <EditText
+                android:id="@+id/enterAlbumName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+               android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:maxLength="25"
+                android:hint="Enter your album name"
+                android:textColor="@color/orange"
+                android:textColorHint="@color/heavenblack2"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+
+                android:background="@drawable/rounded_edittext">
+
+                <requestFocus/>
+            </EditText>
+
+
+            <Button
+                android:id="@+id/upload_button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_selector2"
+                android:gravity="center"
+                android:text="UPLOAD"
+                android:textColor="@color/pure_white" />
+
+
+            <com.google.android.gms.ads.AdView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adView_upload"
+             android:layout_gravity="center"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_home_footer">
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

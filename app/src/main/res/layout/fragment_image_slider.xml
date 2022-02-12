@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_white"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pure_white"
+    android:fillViewport="true"
+    android:id="@+id/sclV2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardbox_4">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:id="@+id/viewpager_layout">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/banner_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+            android:layout_below="@+id/banner_container"
+            android:id="@+id/viewpager"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/viewpager_layout">
+
+            <com.joaquimley.faboptions.FabOptions
+                android:id="@+id/fab_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:elevation="5dp"
+                app:background_color="@color/truered">
+            </com.joaquimley.faboptions.FabOptions>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/appbg1">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/appNameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:textColor="@color/pure_white"
+                    android:text="Hairminion"
+                    android:textSize="14sp" />
+
+                <TextView
+                android:id="@+id/appNametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="All Women Hairstyles"
+                android:textColor="@color/pure_white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appNameLayout"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="5dp">
+
+
+                <RelativeLayout
+                    android:id="@+id/Lbg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingEnd="2dp"
+                    android:layout_margin="0dp">
+
+
+                    <com.joooonho.SelectableRoundedImageView
+                        android:id="@+id/bg1"
+                        android:layout_width="140dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="2dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/hair"
+                        android:scaleType="centerCrop"
+                        app:sriv_left_bottom_corner_radius="16dp"
+                        app:sriv_left_top_corner_radius="16dp"
+                        app:sriv_right_bottom_corner_radius="16dp"
+                        app:sriv_right_top_corner_radius="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bg1"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:padding="5dp"
+                        android:textColor="@color/pure_white"
+                        android:background="@drawable/button_selector"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="20sp"
+                        android:text="Hair"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/Lbg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/Lbg1">
+
+<com.joooonho.SelectableRoundedImageView
+    android:id="@+id/bg2"
+    android:layout_width="140dp"
+    android:layout_height="200dp"
+    android:src="@drawable/braid"
+    android:layout_centerInParent="true"
+    android:layout_margin="5dp"
+    android:scaleType="centerCrop"
+    app:sriv_left_bottom_corner_radius="16dp"
+    app:sriv_left_top_corner_radius="16dp"
+    app:sriv_right_bottom_corner_radius="16dp"
+    app:sriv_right_top_corner_radius="16dp"
+    />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bg2"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@color/pure_white"
+                        android:background="@drawable/button_selector"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="20sp"
+                        android:text="Braids"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/Lbg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Lbg1">
+
+
+                    <com.joooonho.SelectableRoundedImageView
+                        android:id="@+id/bg3"
+                        android:layout_width="140dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/natural"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        app:sriv_left_bottom_corner_radius="16dp"
+                        app:sriv_left_top_corner_radius="16dp"
+                        app:sriv_right_bottom_corner_radius="16dp"
+                        app:sriv_right_top_corner_radius="16dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/bg3"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:padding="5dp"
+                        android:textColor="@color/pure_white"
+                        android:background="@drawable/button_selector"
+                        android:textSize="20sp"
+                        android:text="Natural"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/Lbg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/Lbg3"
+
+
+                    android:layout_below="@+id/Lbg2">
+
+                    <com.joooonho.SelectableRoundedImageView
+                        android:id="@+id/bg4"
+                        android:layout_width="140dp"
+                        android:layout_height="200dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/color"
+                        android:scaleType="centerCrop"
+                        app:sriv_left_bottom_corner_radius="16dp"
+                        app:sriv_left_top_corner_radius="16dp"
+                        app:sriv_right_bottom_corner_radius="16dp"
+                        app:sriv_right_top_corner_radius="16dp"
+                        />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bg4"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    android:textColor="@color/pure_white"
+                    android:background="@drawable/button_selector"
+                    android:textSize="20sp"
+                    android:text="Colored"/>
+
+            </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/banner_container"
+                android:layout_below="@id/cat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_alignParentBottom="true">
+
+
+<!--                <com.google.android.gms.ads.AdView-->
+<!--                    xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/adView"-->
+<!--                    ads:adSize="MEDIUM_RECTANGLE"-->
+<!--                    ads:adUnitId="@string/banner_home_footer"-->
+<!--                    android:layout_gravity="center_horizontal|bottom"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    ads:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    >-->
+<!--                </com.google.android.gms.ads.AdView>-->
+
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="UPLOAD"
+                    android:textColor="@color/pure_white"
+                    android:id="@+id/upBtn"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    android:background="@drawable/button_selector2" />
+                <TextView
+                    android:id="@+id/insta"
+                    android:drawableStart="@drawable/ic_insta"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Follow us on Instagram"
+                    android:drawableTint="@color/pure_white"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pure_white"
+                    android:background="@drawable/button_selector2"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:id="@+id/fbk"
+                    android:drawableStart="@drawable/ic_fbk"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/pure_white"
+                    android:text="Follow us on Facebook"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pure_white"
+                    android:background="@drawable/button_selector2"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:id="@+id/rate"
+                    android:drawableStart="@drawable/ic_rate"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/pure_white"
+                    android:text="Rate this app"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pure_white"
+                    android:background="@drawable/button_selector2"
+                    android:padding="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/pp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy-Policy"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pure_white"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">All women hairstyles</string>
+
+    <string name="banner_home_footer" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    Admob ad units IDfs
+
+
+    <string name="facebook_app_id">155871289992615</string>
+    <string name="facebook_client_token">EAACNw5ze5acBAMQZAPPgMb7CkvZBxwGlvp5VgcyrRZAuNBHXWaSxwvnZAm672pry4jBNkQFCkp9OtYaZBfZB0MLYa6Pxd1bYoDikiTPYOokwE4XNyPhayNokMQpZBC5JWpeXs6DRXRtg3fIMUUb2JGpXJCuBaP8HJzpIkhqPMsuXuAWhfH2QXuZAxC0meZBtFrrcIO5HQHfrorgZDZD
+</string>
+    <!--APP BAR MENU-->
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_rate">Rate</string>
+    <!--permission-->
+    <!--my collections-->
+    <!--Create an album-->
+
+    <!--about page string-->
+    <!--NAV IMAGE-->
+
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+    <!-- Strings related to login -->
+    <!--textWatcher-->
+
+    <string name="action_sign_in_short">Sign in</string>
+    <!--publish-->
+
+    <string name="title_activity_my_collection">MyCollection</string>
+    <string name="title_activity_view_image">ViewImage</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--Slider Strings-->
+    <!--Slider Strings-->
+
+
+</resources>

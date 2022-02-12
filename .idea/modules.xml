@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Hair_App_2.iml" filepath="$PROJECT_DIR$/.idea/modules/Hair_App_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Hair_App_2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Hair_App_2.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/audience-network-sdk-6.8.0/Hair_App_2.audience-network-sdk-6.8.0.iml" filepath="$PROJECT_DIR$/.idea/modules/audience-network-sdk-6.8.0/Hair_App_2.audience-network-sdk-6.8.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.hairstyle.hairstyleapp.app/Hair_App_2.com.hairstyle.hairstyleapp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/com.hairstyle.hairstyleapp.app/Hair_App_2.com.hairstyle.hairstyleapp.app.iml" />
+    </modules>
+  </component>
+</project>

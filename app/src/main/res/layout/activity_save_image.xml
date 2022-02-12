@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/deadDark"
+    tools:context="com.hairstyle.hairstyleapp.Remove_Design">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:paddingTop="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+        android:id="@+id/sclV">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardbox_4">
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relSave"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+          >
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:id="@+id/Simg"
+            android:layout_margin="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/saveBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relSave"
+                android:background="@drawable/button_selector2"
+                android:text="save"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:textColor="@color/drop_white"
+                android:padding="18dp"
+                android:layout_weight="1"
+         />
+
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/banner_container"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/saveBtn"
+                android:layout_alignParentBottom="true">
+
+
+            </LinearLayout>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:text="X"
+            android:id="@+id/removeBtn"
+            android:padding="2dp"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:visibility="gone"
+            android:textColor="@color/heavenblack"
+            android:background="@drawable/cardbox7"
+            android:layout_below="@id/banner_container"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
