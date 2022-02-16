@@ -59,9 +59,7 @@ import adapter.SlideshowDialogFragment2;
 
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, SwipeRefreshLayout.OnRefreshListener
-
-{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, SwipeRefreshLayout.OnRefreshListener {
 
     private String TAG = MainActivity.class.getSimpleName();
 
