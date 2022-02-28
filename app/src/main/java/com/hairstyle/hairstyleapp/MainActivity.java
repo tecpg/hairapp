@@ -115,6 +115,7 @@ private String query;
         swipeRefreshLayout.setColorSchemeColors(getResources().getColor(android.R.color.holo_red_light));
 
 
+
 //Permmision Status
         permissionStatus = getSharedPreferences("permissionStaus", MODE_PRIVATE);
         // getData();

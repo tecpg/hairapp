@@ -9,12 +9,6 @@ buildscript {
 
 }
 
-repositories {
-
-    maven {
-        url "https://android-sdk.is.com/"
-    }
-}
 
 apply plugin: 'com.android.application'
 
@@ -28,13 +22,16 @@ android {
     }
     compileSdkVersion 31
 
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     defaultConfig {
         // applicationId  "com.yourdesignsapp.AnkaraWomenFashionStyles"
         minSdkVersion 19
         targetSdkVersion 31
-        versionCode 18
-        versionName "5"
+        versionCode 20
+        versionName "6"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 

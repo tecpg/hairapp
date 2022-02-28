@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
@@ -25,6 +26,9 @@ import Helper.AudienceNetworkInitializeHelper;
 import com.facebook.ads.*;
 import com.facebook.ads.AdSize;
 import com.facebook.ads.AdView;
+import com.ironsource.mediationsdk.ISBannerSize;
+import com.ironsource.mediationsdk.IronSource;
+import com.ironsource.mediationsdk.IronSourceBannerLayout;
 
 
 public class SplashActivity extends AppCompatActivity {
@@ -52,6 +56,8 @@ public class SplashActivity extends AppCompatActivity {
         // Otherwise call initialize() onCreate() of all Activities that contain ads or
         // from onCreate() of your Splash Activity.
         AudienceNetworkInitializeHelper.initialize(this);
+//        IronSource.init(this, "1334b9461");
+//        IronSource.setMetaData("Facebook_IS_CacheFlag", "IMAGE");
 
         //Button Font for Version 23 and above
         TextView title = findViewById(R.id.appNametext);
@@ -64,12 +70,13 @@ public class SplashActivity extends AppCompatActivity {
 
 
 
-
-     //   com.facebook.ads.AdView adView = new com.facebook.ads.AdView(this, "my ID", com.facebook.ads.AdSize.BANNER_HEIGHT_50);
+        AdSettings.addTestDevice("585811ea-f049-4eeb-ad84-c3f63ada4a2f");
+        com.facebook.ads.AdView adView = new com.facebook.ads.AdView(this, "my ID", com.facebook.ads.AdSize.BANNER_HEIGHT_50);
       adView = new AdView(this, "155871289992615_237328858513524", AdSize.BANNER_HEIGHT_50);
 
 // Find the Ad Container
         LinearLayout adContainer = (LinearLayout) findViewById(R.id.banner_container);
+
 
 // Add the ad view to your activity layout
         adContainer.addView(adView);
