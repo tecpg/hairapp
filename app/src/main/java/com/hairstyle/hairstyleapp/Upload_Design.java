@@ -29,10 +29,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -77,7 +73,6 @@ public class Upload_Design extends AppCompatActivity {
     SQLiteHandler db;
     ScrollView scrollView;
     //ads
-    private AdView madView;
 
     private EditText albumNameText;
     private ArrayList<String> title;
@@ -98,37 +93,6 @@ public class Upload_Design extends AppCompatActivity {
 
         // Toast.makeText(UploadDesign.this,catToServer,Toast.LENGTH_LONG).show();
         //ads code
-        madView = findViewById(R.id.adView_upload);
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("D02FCD5BE190BCAA7310AC47A63FA0D5").build();
-        List<String> testDeviceIds = Arrays.asList("D02FCD5BE190BCAA7310AC47A63FA0D5");
-        madView.loadAd(adRequest);
-
-        madView.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                //   MyToast.showToast(getApplicationContext(),"Ad is loaded");
-            }
-            @Override
-            public void onAdClosed() {
-                //  MyToast.showToast(getApplicationContext(),"Ad is closed");
-            }
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                //  MyToast.showToast(getApplicationContext(),"Ad failed to load, error code: " + errorCode);
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                //  MyToast.showToast(getApplicationContext(),"Ad left com.yourdesignsapp.hairstyleapp.app");
-            }
-
-            @Override
-            public void onAdOpened() {
-                //  MyToast.showToast(getApplicationContext(),"Ad is opened");
-            }
-
-        });
 
 
         pDialog = new ProgressDialog(this);
@@ -423,28 +387,18 @@ albumNameText.addTextChangedListener(TEW);
     }
     @Override
     public  void onPause(){
-        if (madView != null){
-            madView.pause();
-            //Intent intent = new Intent(this, AdsActivity.class);
-            // startActivity(intent);
-        }
+
         super.onPause();
     }
 
     @Override
     public  void onResume(){
         super.onResume();
-        if (madView != null){
-
-            madView.resume();
-        }
     }
 
     @Override
     public  void onDestroy(){
-        if (madView != null){
-            madView.destroy();
-        }
+
         super.onDestroy();
     }
     public File resizeFile(File file){

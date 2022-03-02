@@ -25,7 +25,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.viewpager.widget.ViewPager;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -55,8 +54,6 @@ public class SaveImage extends AppCompatActivity {
     private int selectedPosition = 0;
     DownloadManager downloadManager;
 
-    private ArrayList<Image> images;
-    private ViewPager viewPager;
 
     //String SubEndPoint;
     private static final int EXTERNAL_STORAGE_PERMISSION_CONSTANT = 100;

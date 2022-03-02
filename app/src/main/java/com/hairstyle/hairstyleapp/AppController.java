@@ -10,10 +10,6 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.hairstyle.hairstyleapp.util.AppOpenManager;
 import com.hairstyle.hairstyleapp.util.LruBitmapCache;
 
 public class AppController extends Application {
@@ -25,20 +21,13 @@ public class AppController extends Application {
     private ImageLoader imageLoader;
 
     private static AppController mInstance;
-    AppOpenManager appOpenManager;
 
     @Override
     public void onCreate() {
         super.onCreate();
         mInstance = this;
         mInstance = this;
-        MobileAds.initialize(
-                this,
-                new OnInitializationCompleteListener() {
-                    @Override
-                    public void onInitializationComplete(InitializationStatus initializationStatus) {}
-                });
-        appOpenManager = new AppOpenManager(this);
+
     }
 
     public static synchronized AppController getInstance() {

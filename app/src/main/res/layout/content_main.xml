@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/swipe_refresh_layout"
-        android:layout_above="@+id/adView">
+ >
 
         <ScrollView
             android:layout_width="match_parent"
@@ -37,16 +37,6 @@
         </ScrollView>
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/adView"
-        android:visibility="gone"
-        ads:adSize="SMART_BANNER"
-        android:layout_alignParentBottom="true"
-        ads:adUnitId="@string/banner_home_footer">
-    </com.google.android.gms.ads.AdView>
 
 
 

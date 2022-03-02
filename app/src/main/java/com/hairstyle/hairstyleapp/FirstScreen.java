@@ -35,7 +35,7 @@ public class FirstScreen extends AppCompatActivity {
         // from onCreate() of your Splash Activity.
         AudienceNetworkInitializeHelper.initialize(this);
         //---------------------------Ad Banner Code----------------------------------------------
-        AdSettings.addTestDevice("cb10b985-eb21-4d8e-82b3-569763a772ba");
+        AdSettings.addTestDevice("bd05e63a-740b-48a4-a1a4-b694c0403617");
 
         //   com.facebook.ads.AdView adView = new com.facebook.ads.AdView(this, "my ID", com.facebook.ads.AdSize.BANNER_HEIGHT_50);
         adView = new AdView(this, "155871289992615_238327571746986", AdSize.RECTANGLE_HEIGHT_250);

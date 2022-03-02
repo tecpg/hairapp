@@ -28,14 +28,5 @@
         android:id="@+id/rImg"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
-    <com.google.android.gms.ads.AdView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/adView_rd"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_home_footer">
 
-    </com.google.android.gms.ads.AdView>
 </RelativeLayout>

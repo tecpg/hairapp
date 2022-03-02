@@ -36,13 +36,6 @@ import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.initialization.InitializationStatus;
-import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import com.hairstyle.hairstyleapp.app.Config;
 
@@ -89,7 +82,7 @@ RecyclerView recyclerView1;
     int RecyclerViewItemPosition ;
 TextView stitle,sub;
 private String query;
-    private AdView madView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -140,47 +133,7 @@ private String query;
 
 
         checkConn();
-        //ads code
-
-        MobileAds.initialize(getApplicationContext(), new OnInitializationCompleteListener() {
-            @Override
-            public void onInitializationComplete(@NonNull InitializationStatus initializationStatus) {
-            }
-        });
-
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("75A689A6110A8BFA67EC29AAF1D0A265").build();
-
-        madView = findViewById(R.id.adView);
-        madView.loadAd(adRequest);
-
-        madView.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                //   MyToast.showToast(getApplicationContext(),"Ad is loaded");
-            }
-
-            @Override
-            public void onAdClosed() {
-                //  MyToast.showToast(getApplicationContext(),"Ad is closed");
-            }
-
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                // MyToast.showToast(SplashActivity.this,"Ad failed to load, error code s2: " + errorCode);
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                //  MyToast.showToast(getApplicationContext(),"Ad left com.yourdesignsapp.trendingankara.app");
-            }
-
-            @Override
-            public void onAdOpened() {
-                //  MyToast.showToast(getApplicationContext(),"Ad is opened");
-            }
-
-        });
+        //ads code#
 //-------------------------------------Ask for Permission Code----------------------------------------
 
     if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
@@ -478,13 +431,11 @@ private String query;
 
     @Override
     public void onResume() {
-        if (madView != null){madView.resume();}
         super.onResume();
     }
 
     @Override
     public void onPause() {
-        if (madView != null){madView.pause();}
 
         super.onPause();
     }
@@ -492,7 +443,6 @@ private String query;
 
     @Override
     public void onDestroy() {
-        if (madView != null){madView.destroy();}
         //  Toast.makeText(getActivity(),"time destroyed"+ String.valueOf(getRemainingTime()), Toast.LENGTH_SHORT).show();
 
         super.onDestroy();

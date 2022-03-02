@@ -17,9 +17,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -37,7 +34,6 @@ public class Remove_Design extends AppCompatActivity {
     private Button dBtn;
     private ProgressDialog pDialog;
     private ImageView rImg;
-private AdView madView;
 
 
     @Override
@@ -45,38 +41,6 @@ private AdView madView;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_remove__design);
 setTitle("Remove Design");
-
-        madView = findViewById(R.id.adView_rd);
-
-        AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .addTestDevice("0866F15A0F06AD08B8E6454AA0B1746C").build();
-        madView.loadAd(adRequest);
-
-        madView.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                //   MyToast.showToast(getApplicationContext(),"Ad is loaded");
-            }
-            @Override
-            public void onAdClosed() {
-                //  MyToast.showToast(getApplicationContext(),"Ad is closed");
-            }
-            @Override
-            public void onAdFailedToLoad(int errorCode) {
-                //  MyToast.showToast(getApplicationContext(),"Ad failed to load, error code: " + errorCode);
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                //  MyToast.showToast(getApplicationContext(),"Ad left com.yourdesignsapp.hairstyleapp.app");
-            }
-
-            @Override
-            public void onAdOpened() {
-                //  MyToast.showToast(getApplicationContext(),"Ad is opened");
-            }
-
-        });
 
 
 
@@ -239,28 +203,19 @@ try {
 
     @Override
     public  void onPause(){
-        if (madView != null){
-            madView.pause();
-            //Intent intent = new Intent(this, AdsActivity.class);
-            // startActivity(intent);
-        }
+
         super.onPause();
     }
 
     @Override
     public  void onResume(){
         super.onResume();
-        if (madView != null){
 
-            madView.resume();
-        }
     }
 
     @Override
     public  void onDestroy(){
-        if (madView != null){
-            madView.destroy();
-        }
+
         super.onDestroy();
     }
 }

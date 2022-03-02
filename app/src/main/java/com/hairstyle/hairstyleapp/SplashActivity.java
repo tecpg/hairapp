@@ -70,7 +70,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
 
-        AdSettings.addTestDevice("585811ea-f049-4eeb-ad84-c3f63ada4a2f");
+        AdSettings.addTestDevice("bd05e63a-740b-48a4-a1a4-b694c0403617");
         com.facebook.ads.AdView adView = new com.facebook.ads.AdView(this, "my ID", com.facebook.ads.AdSize.BANNER_HEIGHT_50);
       adView = new AdView(this, "155871289992615_237328858513524", AdSize.BANNER_HEIGHT_50);
 
